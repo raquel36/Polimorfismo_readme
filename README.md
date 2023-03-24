@@ -1,16 +1,16 @@
 # Polimorfismo
 
 ## Índice
-- [1.-¿Qué es el polimorfismo?](#1.-¿Qué es el polimorfismo?)  
-- [2.- Ejemplo sencillo de polimorfismo en Java](#2.- Ejemplo sencillo de polimorfismo en Java)   
-- [3.- Implementación](#3.- Implementación)   
-- [4.- Reto](#4.- Reto)   
-- [5.- Solución al reto](#5.- Solución al reto)   
--  [5.1 Primer paso](#5.1 Primer paso)     
-- [5.2 Segundo paso](#5.2 Segundo paso)        
-- [5.3 Tercer paso](#5.3 Tercer paso)  
-- [6.- Conclusiones](#6.- Conclusiones)    
-- [7.-Webgrafia](#7.-Webgrafia)    
+- [1.-¿Qué es el polimorfismo?](#1.-¿Qué es el polimorfismo?)
+- [2.-Ejemplo sencillo de polimorfismo en Java](#2.-Ejemplo sencillo de polimorfismo en Java)
+- [3.-Implementación](#3.-Implementación) 
+- [4.-Reto](#4.- Reto)
+- [5.-Solución al reto](#5.-Solución al reto)
+- [5.1 Primer paso](#5.1 Primer paso)  
+- [5.2 Segundo paso](#5.2 Segundo paso)    
+- [5.3 Tercer paso](#5.3 Tercer paso)
+- [6.- Conclusiones](#6.-Conclusiones)
+- [7.-Webgrafia](#7.-Webgrafia)
 
 ## 1.-¿Qué es el polimorfismo?  
 Se trata de comportamientos diferentes, asociados a objetos distintos. Lo interesante es que al llamarlos se utilizará el comportamiento correspondiente al objeto que se esté usando.  
