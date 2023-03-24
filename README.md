@@ -1,28 +1,28 @@
 # Polimorfismo
 
 ## Índice
-- [1.-¿Qué es el polimorfismo?](#1.-¿Qué es el polimorfismo?)
-- [2.-Ejemplo sencillo de polimorfismo en Java](#2.-Ejemplo sencillo de polimorfismo en Java)
-- [3.-Implementación](#3.-Implementación) 
-- [4.-Reto](#4.- Reto)
-- [5.-Solución al reto](#5.-Solución al reto)
-- [5.1 Primer paso](#5.1 Primer paso)  
-- [5.2 Segundo paso](#5.2 Segundo paso)    
-- [5.3 Tercer paso](#5.3 Tercer paso)
-- [6.- Conclusiones](#6.-Conclusiones)
-- [7.-Webgrafia](#7.-Webgrafia)
+- [¿Qué es el polimorfismo?](#¿Qué es el polimorfismo?) 
+- [Ejemplo sencillo de polimorfismo en Java](#Ejemplo sencillo de polimorfismo en Java) 
+- [Implementación](#Implementación) 
+- [Reto](#Reto) 
+- [Solución al reto](#Solución al reto) 
+- [Primer paso](#Primer paso)  
+- [Segundo paso](#Segundo paso)     
+- [Tercer paso](#Tercer paso) 
+- [Conclusiones](#Conclusiones) 
+- [Webgrafia](#Webgrafia) 
 
-## 1.-¿Qué es el polimorfismo?  
+## ¿Qué es el polimorfismo?  
 Se trata de comportamientos diferentes, asociados a objetos distintos. Lo interesante es que al llamarlos se utilizará el comportamiento correspondiente al objeto que se esté usando.  
   
 En programación orientada a objetos, el polimorfismo es la capacidad que tienen los objetos de una clase en ofrecer respuesta distinta e independiente en función de los parámetros (diferentes implementaciones) utilizados durante su invocación. Dicho de otro modo el objeto como entidad puede contener valores de diferentes tipos durante la ejecución del programa.  
 
-## 2.- Ejemplo sencillo de polimorfismo en Java  
+## Ejemplo sencillo de polimorfismo en Java  
 Vamos a aplicar lo visto en la teoría. Implementaremos una clase Vehiculo que tiene un método mover() que es sobreescrito por las clases Coche y Bicicleta. Luego, en el método main, se creará una instancia de la clase Coche y se asigna a una variable de tipo Vehiculo. Eso es exactamente el polimorfismo.   
   
 Cuando se llama al método mover() en esa variable, se ejecuta el método sobreescrito en la clase Coche. Lo mismo sucede cuando se asigna una instancia de la clase Bicicleta a la misma variable y se llama al método mover().  
 
-## 3.- Implementación  
+## Implementación  
         class Vehiculo {
             public void mover(int distancia) {
                 System.out.println("El vehículo se está moviendo " + distancia + " metros");
@@ -66,15 +66,15 @@ Cuando se llama al método mover() en esa variable, se ejecuta el método sobree
             }
       }
 
-## 4.- Reto
+## Reto
 Implementa una clase Animal con un método hacerSonido(int veces) que tome un parámetro veces e imprima un mensaje genérico como “El animal está haciendo un sonido” el número de veces indicado por el parámetro. Luego, crea dos clases que extiendan de Animal: Perro y Gato.  
   
 En ambas clases, sobrescribe el método hacerSonido(int veces) para imprimir un mensaje específico para cada animal (por ejemplo, “El perro está ladrando” y “El gato está maullando”) el número de veces indicado por el parámetro.  
 
 Finalmente, en el método main, crea una instancia de la clase Perro y otra de la clase Gato, y llama al método hacerSonido(int veces) en ambas instancias con diferentes valores para el parámetro.  
 
-## 5.- Solución al reto  
-### 5.1 Primer paso
+## Solución al reto  
+### Primer paso
 Primero, creamos la clase Animal con el método hacerSonido(int veces):  
         ```    class Animal {  
         
@@ -90,7 +90,7 @@ Primero, creamos la clase Animal con el método hacerSonido(int veces):
         
     }    ```             
 
-### 5.2 Segundo paso  
+### Segundo paso  
 Luego, creamos las clases Perro y Gato que extienden de la clase Animal. 
   
 En ambas clases sobreescribimos el método hacerSonido(int veces) para imprimir un mensaje específico para cada animal el número de veces indicado por el parámetro:  
@@ -110,7 +110,7 @@ En ambas clases sobreescribimos el método hacerSonido(int veces) para imprimir 
           }
       }
  
-### 5.3 Tercer paso
+### Tercer paso
 Finalmente, en el método main creamos una instancia de la clase Perro y otra de la clase Gato, y llamamos al método hacerSonido(int veces) en ambas instancias con diferentes valores para el parámetro:  
              ´´´    public class PolimorfismoEjercicio {   
              
@@ -134,11 +134,11 @@ Finalmente, en el método main creamos una instancia de la clase Perro y otra de
           
       }    ´´´           
 
-## 6.- Conclusiones  
+## Conclusiones  
 Este documento pretende dar una idea general sobre lo que significa el polimorfismo en java y la realización de varios ejemplos para entenderlo. El polimorfismo es una de las características más importantes de la Programación Orientada a Objetos en Java y muy útil para dar flexibilidad al código y simplificar su implementación.  
 
 
-## 7.-Webgrafia  
+## Webgrafia  
 Programació en Java - Polimorfismo - 2018  
 https://www.youtube.com/watch?v=RXcUTWczbag  
   
