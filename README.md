@@ -23,24 +23,24 @@ Vamos a aplicar lo visto en la teoría. Implementaremos una clase Vehiculo que t
 Cuando se llama al método mover() en esa variable, se ejecuta el método sobreescrito en la clase Coche. Lo mismo sucede cuando se asigna una instancia de la clase Bicicleta a la misma variable y se llama al método mover().  
 
 ##3.- Implementación
-class Vehiculo {
-    public void mover(int distancia) {
-        System.out.println("El vehículo se está moviendo " + distancia + " metros");
-    }
-}
-
-class Coche extends Vehiculo {
-    public void mover(int distancia) {
-        System.out.println("El coche está avanzando " + distancia + " metros");
-        if (distancia > 10) {
-            System.out.println("El coche está yendo rápido");
-        } else {
-            System.out.println("El coche está yendo lento");
+        class Vehiculo {
+            public void mover(int distancia) {
+                System.out.println("El vehículo se está moviendo " + distancia + " metros");
+            }
         }
-    }
-}
 
-class Bicicleta extends Vehiculo {
+        class Coche extends Vehiculo {
+            public void mover(int distancia) {
+                System.out.println("El coche está avanzando " + distancia + " metros");
+                if (distancia > 10) {
+                    System.out.println("El coche está yendo rápido");
+                } else {
+                    System.out.println("El coche está yendo lento");
+                }
+            }
+        }
+
+        class Bicicleta extends Vehiculo {
             public void mover(int distancia) {
                 System.out.println("La bicicleta está pedaleando " + distancia + " metros");
                 if (distancia > 5) {
@@ -50,8 +50,8 @@ class Bicicleta extends Vehiculo {
                 }
             }
         }
-        
- public class PolimorfismoEjemplo {
+
+         public class PolimorfismoEjemplo {
     public static void main(String[] args) {
         Vehiculo miVehiculo = new Coche();
 
@@ -64,6 +64,7 @@ class Bicicleta extends Vehiculo {
         miVehiculo.mover(13);
     }
 }
+
 
 
 
