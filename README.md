@@ -76,12 +76,18 @@ Finalmente, en el método main, crea una instancia de la clase Perro y otra de l
 ## 5.- Solución al reto  
 ### 5.1 Primer paso
 Primero, creamos la clase Animal con el método hacerSonido(int veces):  
-        ```    class Animal { \n 
-        public void hacerSonido(int veces) {  \n
-            for (int i = 0; i < veces; i++) {  \n
-                System.out.println("El animal está haciendo un sonido");  \n
-            }  \n
-        }  \n
+        ```    class Animal {  
+        
+        public void hacerSonido(int veces) {  
+        
+            for (int i = 0; i < veces; i++) {  
+            
+                System.out.println("El animal está haciendo un sonido");  
+                
+            }  
+            
+        }  
+        
     }    ```             
 
 ### 5.2 Segundo paso  
@@ -106,17 +112,27 @@ En ambas clases sobreescribimos el método hacerSonido(int veces) para imprimir 
  
 ### 5.3 Tercer paso
 Finalmente, en el método main creamos una instancia de la clase Perro y otra de la clase Gato, y llamamos al método hacerSonido(int veces) en ambas instancias con diferentes valores para el parámetro:  
-             ```    public class PolimorfismoEjercicio {   \n
-          public static void main(String[] args) {   \n
-              Animal miAnimal = new Perro(); \n
-              miAnimal.hacerSonido(3); // El perro está ladrando   \n
-                                       // El perro está ladrando \n
-                                       // El perro está ladrando   \n
-              miAnimal = new Gato();     \n
-              miAnimal.hacerSonido(2); // El gato está maullando  \n    
-                                       // El gato está maullando \n
-          } \n
-      }    ```           
+             ´´´    public class PolimorfismoEjercicio {   
+             
+          public static void main(String[] args) {  
+          
+              Animal miAnimal = new Perro(); 
+              
+              miAnimal.hacerSonido(3); // El perro está ladrando   
+              
+                                       // El perro está ladrando  
+                                       
+                                       // El perro está ladrando  
+                                       
+              miAnimal = new Gato();  
+              
+              miAnimal.hacerSonido(2); // El gato está maullando  
+              
+                                       // El gato está maullando 
+                                       
+          }  
+          
+      }    ´´´           
 
 ### 6.- Conclusiones  
 Este documento pretende dar una idea general sobre lo que significa el polimorfismo en java y la realización de varios ejemplos para entenderlo. El polimorfismo es una de las características más importantes de la Programación Orientada a Objetos en Java y muy útil para dar flexibilidad al código y simplificar su implementación.  
