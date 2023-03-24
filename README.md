@@ -75,53 +75,58 @@ Finalmente, en el método main, crea una instancia de la clase Perro y otra de l
 
 ## Solución al reto  
 ### Primer paso  
-Primero, creamos la clase Animal con el método hacerSonido(int veces):   
+Primero, creamos la clase Animal con el método hacerSonido(int veces):  
+
         class Animal {  
-        
+
         public void hacerSonido(int veces) {  
-        
+
             for (int i = 0; i < veces; i++) {  
-            
+
                 System.out.println("El animal está haciendo un sonido");  
-                
+
             }  
-            
+
         }  
-        
-    }           
+
+        }
 
 ### Segundo paso  
 Luego, creamos las clases Perro y Gato que extienden de la clase Animal.  
   
-En ambas clases sobreescribimos el método hacerSonido(int veces) para imprimir un mensaje específico para cada animal el número de veces indicado por el parámetro:   
-      class Perro extends Animal {
-          public void hacerSonido(int veces) {
-              for (int i = 0; i < veces; i++) {
-                  System.out.println("El perro está ladrando");
-              }
-          }
-      }
+En ambas clases sobreescribimos el método hacerSonido(int veces) para imprimir un mensaje específico para cada animal el número de veces indicado por el parámetro: 
 
-      class Gato extends Animal {
-          public void hacerSonido(int veces) {
-              for (int i = 0; i < veces; i++) {
-                  System.out.println("El gato está maullando");
+        class Perro extends Animal {
+            public void hacerSonido(int veces) {
+                for (int i = 0; i < veces; i++) {
+                    System.out.println("El perro está ladrando");
+                }
+            }
+        }
+
+        class Gato extends Animal {
+            public void hacerSonido(int veces) {
+                for (int i = 0; i < veces; i++) {
+                    System.out.println("El gato está maullando");
+                }
+            }
+        }
+        
+### Tercer paso  
+Finalmente, en el método main creamos una instancia de la clase Perro y otra de la clase Gato, y llamamos al método hacerSonido(int veces) en ambas instancias con diferentes valores para el parámetro:  
+
+        public class PolimorfismoEjercicio {
+              public static void main(String[] args) {
+                  Animal miAnimal = new Perro();
+                  miAnimal.hacerSonido(3); // El perro está ladrando
+                                           // El perro está ladrando
+                                           // El perro está ladrando
+                  miAnimal = new Gato();
+                  miAnimal.hacerSonido(2); // El gato está maullando
+                                           // El gato está maullando
               }
           }
-      }
-### Tercer paso  
-Finalmente, en el método main creamos una instancia de la clase Perro y otra de la clase Gato, y llamamos al método hacerSonido(int veces) en ambas instancias con diferentes valores para el parámetro:    
-    public class PolimorfismoEjercicio {
-          public static void main(String[] args) {
-              Animal miAnimal = new Perro();
-              miAnimal.hacerSonido(3); // El perro está ladrando
-                                       // El perro está ladrando
-                                       // El perro está ladrando
-              miAnimal = new Gato();
-              miAnimal.hacerSonido(2); // El gato está maullando
-                                       // El gato está maullando
-          }
-      }
+        
 
 
       
