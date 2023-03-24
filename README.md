@@ -1,18 +1,18 @@
 # Polimorfismo
 
-## Índice
-- [¿Qué es el polimorfismo?](#¿Qué es el polimorfismo?) 
-- [Ejemplo sencillo de polimorfismo en Java](#Ejemplo sencillo de polimorfismo en Java) 
-- [Implementación](#Implementación) 
-- [Reto](#Reto) 
-- [Solución al reto](#Solución al reto) 
-- [Primer paso](#Primer paso) 
-- [Segundo paso](#Segundo paso) 
-- [Tercer paso](#Tercer paso) 
-- [Conclusiones](#Conclusiones) 
-- [Webgrafia](#Webgrafia) 
+## Índice  
+- [¿Qué es el polimorfismo?](#qué-es-el-polimorfismo?)
+- [Ejemplo sencillo de polimorfismo en Java](#ejemplo-sencillo-de-polimorfismo-en-java)
+- [Implementación](#implementación)
+- [Reto](#reto)
+- [Solución al reto](#solución-al-reto)
+  - [Primer paso](#primer-paso)
+  - [Segundo paso](#segundo-paso)
+  - [Tercer paso](#tercer-paso)
+- [Conclusiones](#conclusiones)
+- [Webgrafía](#webgrafía)(https://chat.openai.com/chat#:~:text=corregida%20del%20%C3%ADndice%3A-,%C2%BFQu%C3%A9%20es%20el%20polimorfismo%3F,Webgraf%C3%ADa,-Ten%20en%20cuenta)
 
-## ¿Qué es el polimorfismo?  
+## Qué es el polimorfismo?  
 Se trata de comportamientos diferentes, asociados a objetos distintos. Lo interesante es que al llamarlos se utilizará el comportamiento correspondiente al objeto que se esté usando.  
   
 En programación orientada a objetos, el polimorfismo es la capacidad que tienen los objetos de una clase en ofrecer respuesta distinta e independiente en función de los parámetros (diferentes implementaciones) utilizados durante su invocación. Dicho de otro modo el objeto como entidad puede contener valores de diferentes tipos durante la ejecución del programa.  
