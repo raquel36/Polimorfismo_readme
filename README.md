@@ -106,7 +106,7 @@ En ambas clases sobreescribimos el método hacerSonido(int veces) para imprimir 
  
 ### 5.3 Tercer paso
 Finalmente, en el método main creamos una instancia de la clase Perro y otra de la clase Gato, y llamamos al método hacerSonido(int veces) en ambas instancias con diferentes valores para el parámetro:  
-      public class PolimorfismoEjercicio {
+           public class PolimorfismoEjercicio {
           public static void main(String[] args) {
               Animal miAnimal = new Perro();
               miAnimal.hacerSonido(3); // El perro está ladrando
