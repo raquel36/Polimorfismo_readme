@@ -106,7 +106,7 @@ En ambas clases sobreescribimos el método hacerSonido(int veces) para imprimir 
  
 ### 5.3 Tercer paso
 Finalmente, en el método main creamos una instancia de la clase Perro y otra de la clase Gato, y llamamos al método hacerSonido(int veces) en ambas instancias con diferentes valores para el parámetro:  
-        `\`public class PolimorfismoEjercicio {
+        ``` public class PolimorfismoEjercicio {
           public static void main(String[] args) {
               Animal miAnimal = new Perro();
               miAnimal.hacerSonido(3); // El perro está ladrando
@@ -116,7 +116,7 @@ Finalmente, en el método main creamos una instancia de la clase Perro y otra de
               miAnimal.hacerSonido(2); // El gato está maullando
                                        // El gato está maullando
           }
-      }``
+      } ```  
 
 ### 6.- Conclusiones  
 Este documento pretende dar una idea general sobre lo que significa el polimorfismo en java y la realización de varios ejemplos para entenderlo. El polimorfismo es una de las características más importantes de la Programación Orientada a Objetos en Java y muy útil para dar flexibilidad al código y simplificar su implementación.  
